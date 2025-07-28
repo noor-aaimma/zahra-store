@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zahra-backend
+    env: node
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: MONGO_URI
+        value: your-mongodb-uri
+      - key: FRONTEND_URL
+        value: your-netlify-frontend-url
